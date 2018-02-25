@@ -25,4 +25,4 @@ df <- df %>%
   mutate(has_cabin_number = gsub(pattern = "A.*|B.*|C.*|D.*|E.*|F.*|G.*|H.*|I.*|J.*|K.*|L.*|M.*|N.*|O.*|P.*|Q.*|R.*|S.*|T.*|U.*|V.*|W.*|X.*|Y.*|Z.*", replacement = 1, x = has_cabin_number))
 
 # export and uplaod to Github (include code, original CSV, clean CSV)
-write.csv(df, file = "titanic_code.csv")
+write.csv(df, file = "titanic_clean.csv")
