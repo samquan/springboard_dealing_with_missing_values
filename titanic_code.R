@@ -5,7 +5,6 @@ library(dplyr)
 df <- read.csv("titanic_original.csv")
 
 # replace missing values in embarked with 'S'
-#??? HOW DO I CHECK TO SEE IF THERE ARE ANY MORE MISSING VALUES - ASK KAREN
 df$embarked <- sub("^$", "S", df$embarked)
 
 
